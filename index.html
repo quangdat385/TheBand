@@ -18,16 +18,16 @@
         <!-- Header -->
         <header class="header" id="header">
             <!-- Navigation -->
-            <nav id="header__navbar">
-                <ul class="nav">
+            <nav id="navbar" class="navbar">
+                <ul class="nav" id="nav">
                     <li class="nav__item"><a href="#">Home</a></li>
                     <li class="nav__item"><a href="#band">Band</a></li>
                     <li class="nav__item"><a href="#tour">Tour</a></li>
                     <li class="nav__item"><a href="#contact">Contact</a></li>
-                    <li class ="nav__item header__lg">
+                    <li class ="nav__item nav--lg">
                         <a href="">
                         More 
-                        <i class="heade__lg-arrow fa fa-caret-down"></i>
+                        <i class="nav__arrow fa fa-caret-down"></i>
                         </a>
                         <ul class="subnav">
                             <li><a href="#">Merchandise</a></li>
@@ -35,7 +35,7 @@
                             <li><a href="#">Media</a></li>
                         </ul>
                     </li>
-                    <li class="nav__item header__sm">
+                    <li class="nav__item nav--sm">
                         <a href="#">
                             Merch
                         </a>
@@ -43,12 +43,12 @@
                 </ul>
             </nav>
             <!-- search large -->
-            <div class="header__search-btn">
-                <i class="header__search-icon fa fa-search"></i>
+            <div class="top-search__btn">
+                <i class="top-search__icon fa fa-search"></i>
             </div>
             <!-- search mobile -->
-            <div class="header__mobile-search-btn" id="mobile-menu">
-                <i class="header__mobile-icon fa fa-bars"></i>
+            <div class="mobile-search__btn" id="mobile-menu">
+                <i class="mobile-search__icon fa fa-bars"></i>
             </div>
         </header>
         <!-- slider -->
@@ -56,8 +56,8 @@
             <div class="slider__item">
                 <img class="slider__img" src="./assets/img/slider/chicago.jpg" alt="Chicago">
                 <div class="slider__content">
-                    <h2 class="slider__content-heading">Chicago</h2>
-                    <p class="slider__content-description">
+                    <h2 class="slider__heading">Chicago</h2>
+                    <p class="slider__description">
                         Thank you chicago-A night we won't forget.
                     </p>
                 </div>
@@ -65,8 +65,8 @@
             <div class="slider__item">
                 <img class="slider__img" src="./assets/img/slider/la.jpg" alt="Los Angeles">
                 <div class="slider__content">
-                    <h2 class="slider__content-heading">Los Angeles</h2>
-                    <p class="slider__content-description">
+                    <h2 class="slider__heading">Los Angeles</h2>
+                    <p class="slider__description">
                         We had the time playing at Vinive Beach!
                     </p>
                 </div>
@@ -74,8 +74,8 @@
             <div class="slider__item">
                 <img class="slider__img" src="./assets/img/slider/ny.jpg" alt="Chicago">
                 <div class="slider__content">
-                    <h2 class="slider__content-heading">New York</h2>
-                    <p class="slider__content-description">
+                    <h2 class="slider__heading">New York</h2>
+                    <p class="slider__description">
                         The atmosphere in New York is lorem ipsum.
                     </p>
                 </div>
@@ -84,94 +84,92 @@
 
         </div>
         <!-- Content -->
-        <div class="content" id = "content">
-            <div id="band">
-                <div class="content__section">
-                    <h2 class="content__section-heading">
+        <div class="box" id = "content">
+            <!-- Band -->
+            <div id="band" class="band">
+                <div class="container">
+                    <h2 class="container-heading">
                         THE BAND
                     </h2>
-                    <p class="content__section-sub-heading">We love music</p>
-                    <p class="content__section-text">
+                    <p class="container-sub-heading">We love music</p>
+                    <p class="band-text">
                         We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
                         ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                         consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
-                    <div class="grid grid__full-width content__members-list">
-                        <div class="grid__row " >
-                            <div class="grid__col grid__col-xl--4 grid__col-l--4 grid__col-m--4 
-                                        grid__col-xm--12 content__members-member ">
-                                <p class="content__members-member-name">
+                    <div class="box">
+                        <div class="row" >
+                            <div class="col xl-4 l-4 md-4 sm-4 xm-12">
+                                <p class="band-member__name">
                                     Name
                                 </p>
-                                <img src="./assets//img/team/bandmember.jpg" alt="Name" class="content__members-member-img">
-                            </div>
-                            <div class="grid__col grid__col-xl--4 grid__col-l--4 grid__col-m--4 
-                                        grid__col-xm--12 content__members-member ">
-                                <p class="content__members-member-name">
+                                <img src="./assets//img/team/bandmember.jpg" alt="Name" class="band-member__img">
+                            </div>   
+                            <div class="col xl-4 l-4 md-4 sm-4 xm-12">
+                                <p class="band-member__name">
                                     Name
                                 </p>
-                                <img src="./assets//img/team/bandmember.jpg" alt="Name" class="content__members-member-img">
-                            </div>
-                            <div class="grid__col grid__col-xl--4 grid__col-l--4 grid__col-m--4 
-                                        grid__col-xm--12 content__members-member ">
-                                <p class="content__members-member-name">
+                                <img src="./assets//img/team/bandmember.jpg" alt="Name" class="band-member__img">
+                            </div>   
+                            <div class="col xl-4 l-4 md-4 sm-4 xm-12">
+                                <p class="band-member__name">
                                     Name
                                 </p>
-                                <img src="./assets//img/team/bandmember.jpg" alt="Name" class="content__members-member-img">
-                            </div>
+                                <img src="./assets//img/team/bandmember.jpg" alt="Name" class="band-member__img">
+                            </div>   
+                            
                         </div>
+                        
                     </div>
                 </div>
             </div>
+            <!-- Tour -->
             <div id="tour">
-                <div class="content__section" >
-                    <h2 class="content__section-heading">
+                <div class="container" >
+                    <h2 class="container-heading">
                         TOURS DATES
                     </h2>
-                    <p class="content__section-sub-heading">
+                    <p class="container-sub-heading">
                         Remember to book your tickets !
                     </p>
-                    <ul class="content__tour-tickets-list">
+                    <ul class="tour-ticket">
                         <li>September <span class="sold-out">Sold out</span></li>
                         <li>October <span class="sold-out">Sold out</span></li>
                         <li>November <span class="quantity">3</span></li>
                     </ul>
-                    <div class="grid grid__full-width ">
-                        <div class="grid__row content__tour-places-list">
-                            <div class="grid__col grid__col-xl--4 grid__col-l--4 mt-16
-                                        grid__col-m--4 grid__col-xm--4 content__tour-places-item ">
-                                <img src="./assets/img/Place/newyork.jpg" alt="New York" class="content__tour-places-img">
-                                <div class="content__tour-places-body">
-                                    <h3 class="content__tour-places-place">New York</h3>
-                                    <p class="content__tour-places-time">Fri 27 Nov 2016</p>
-                                    <p class="content__tour-palces-description">
+                    <div class="box">
+                        <div class="row tour-places">
+                            <div class="col xl-4 l-4 md-4 sm-4 xm-12">
+                                <img src="./assets/img/Place/newyork.jpg" alt="New York" class="tour-places__img">
+                                <div class="tour-places__body">
+                                    <h3 class="tour-places__place">New York</h3>
+                                    <p class="tour-places__time">Fri 27 Nov 2016</p>
+                                    <p class="tour-places__description">
                                         Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                     </p>
-                                    <button class="btn js-buy-ticket btn--small">Buy Tickets</button>
+                                    <button class="btn js-buy-ticket btn--small btn--black-white">Buy Tickets</button>
                                 </div>
                             </div>
-                            <div class="grid__col grid__col-xl--4 grid__col-l--4 mt-16
-                                        grid__col-m--4 grid__col-xm--4 content__tour-places-item ">
-                                <img src="./assets/img/Place/paris.jpg" alt="Paris" class="content__tour-places-img">
-                                <div class="content__tour-places-body">
-                                    <h3 class="content__tour-places-place">Paris</h3>
-                                    <p class="content__tour-places-time">Sat 28 Nov 2016</p>
-                                    <p class="content__tour-palces-description">
+                            <div class="col xl-4 l-4 md-4 sm-4 xm-12">
+                                <img src="./assets/img/Place/paris.jpg" alt="Paris" class="tour-places__img">
+                                <div class="tour-places__body">
+                                    <h3 class="tour-places__place">Paris</h3>
+                                    <p class="tour-places__time">Sat 28 Nov 2016</p>
+                                    <p class="tour-palces__description">
                                         Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                     </p>
-                                    <button class="btn js-buy-ticket btn--small">Buy Tickets </button>
+                                    <button class="btn js-buy-ticket btn--small btn--black-white">Buy Tickets </button>
                                 </div>
                             </div>
-                            <div class="grid__col grid__col-xl--4 grid__col-l--4 mt-16
-                                        grid__col-m--4 grid__col-xm--4 content__tour-places-item ">
-                                <img src="./assets/img/Place/sanfran.jpg" alt="San Francisco" class="content__tour-places-img">
-                                <div class="content__tour-places-body">
-                                    <h3 class="content__tour-places-place">San Francisco</h3>
-                                    <p class="content__tour-places-time">Sun 29 Nov 2016</p>
-                                    <p class="content__tour-palces-description">
+                            <div class="col xl-4 l-4 md-4 sm-4 xm-12">
+                                <img src="./assets/img/Place/sanfran.jpg" alt="San Francisco" class="tour-places__img">
+                                <div class="tour-places__body">
+                                    <h3 class="tour-places__place">San Francisco</h3>
+                                    <p class="tour-places__time">Sun 29 Nov 2016</p>
+                                    <p class="tour-palces__description">
                                         Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                     </p>
-                                    <button class="btn js-buy-ticket btn--small">
+                                    <button class="btn js-buy-ticket btn--small btn--black-white">
                                         Buy Tickets
                                     </button>
                                 </div>
@@ -180,18 +178,18 @@
                     </div>
                 </div>
             </div>   
-            <div id="contact"></div>  
-                <div class="content__section">
-                    <h2 class="content__section-heading">
+            <!-- Contact -->
+            <div id="contact" class="contact">
+                <div class="container" >
+                    <h2 class="container-heading">
                         CONTACT
                     </h2>
-                    <p class="content__section-sub-heading">
+                    <p class="container-sub-heading">
                         Fan ? Drop a note!
                     </p>
-                    <div class="grid grid__full-width content__contact">
-                        <div class="grid__row content__contact-container">
-                            <div class="grid__col grid__col-xl--6 grid__col-xl--6 grid__col-xl--6
-                            grid__col-xl--6 content__contact-info mt-16 small-mobile">
+                    <div class="box mt-48">
+                        <div class="row contact-section">
+                            <div class="col xl-6 l-6 md-6 sm-6 contact-info mt-16 xm-12">
                                 <p>
                                     <i class="fa fa-map-marker"></i>Chicago, US
                                 </p>
@@ -204,52 +202,54 @@
                                 
                             </div>
 
-                            <div class="grid__col grid__col-xl--6 grid__col-l--6 grid__col-m--6
-                                        grid__col-xm--6 content__contact-form small-mobile">
+                            <div class="col xl-6 l-6 md-6
+                                        sm--6 contact-form xm-12">
                                 <form action="">
-                                    <div class="grid__row content__contact-form-content">
-                                        <div class="grid__col grid__col-xl--6 grid__col-l--6 grid__col-m--6
-                                            rid__col-xm--6  small-mobile  mt-8">
-                                            <input type="text" required id="" placeholder="Name" class="content__contact-form-control">
+                                    <div class="row">
+                                        <div class="col xl-6 l-6 md-6 sm-6 xm-12 mt-8">
+                                            <input type="text" required id="" placeholder="Name" class="contact-form__control">
                                         </div>
-                                        <div class="grid__col grid__col-xl--6 grid__col-l--6 grid__col-m--6
-                                        rid__col-xm--6 small-mobile  mt-8">
-                                            <input type="mail" required id="" placeholder="Mail" class="content__contact-form-control">
+                                        <div class="col xl-6 l-6 md-6 sm--6 xm-12  mt-8">
+                                            <input type="mail" required id="" placeholder="Mail" class="contact-form__control">
                                         </div>
                                     </div>
-                                    <div class="grid__row mt-8">
-                                        <div class="grid__col grid__col-xl--12 grid__col-l--12 grid__col-m--12
-                                        rid__col-xm--12 small-mobile  mt-8">
-                                            <input type="text" required id="" placeholder="Massage" class="content__contact-form-control">
+                                    <div class="row mt-8">
+                                        <div class="col xl-12 l-12 md-12 sm-12 xm-12  mt-8">
+                                            <input type="text" required id="" placeholder="Massage" class="contact-form__control">
                                         </div>
                                     </div>
-                                    <input type="submit" class="btn pull-right btn--small " value="SEND">
+                                    <input type="submit" class="btn pull-right btn--small btn--black-white " value="SEND">
                                 </form>
                             </div>
                         </div>
                     </div>
-
                 </div>
-            </div> 
-            <div id="content__map-section">
+            </div>
+            <!-- Map -->
+            <div id="map-section">
                 <img src="./assets/img/map.jpg" alt="Map">
             </div>
+            </div> 
         </div>
         <!-- Footer -->
-        <div id="footer" class="footer">
-            <div class="footer__socials-list">
-                <a href=""><i class="fa fa-facebook-official"></i></a>
-                <a href=""><i class="fa fa-instagram"></i></a>
-                <a href=""><i class="fa fa-snapchat"></i></a>
-                <a href=""><i class="fa fa-pinterest-p"></i></a>
-                <a href=""><i class="fa fa-twitter"></i></a>
-                <a href=""><i class="fa fa-linkedin"></i></a>
+        <footer id="footer">
+            <div class="footer">
+                <div class="footer__socials-list">
+                    <a href=""><i class="fa fa-facebook-official"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                    <a href=""><i class="fa fa-snapchat"></i></a>
+                    <a href=""><i class="fa fa-pinterest-p"></i></a>
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+                <p class="footer__copyright">
+                    Powered by 
+                    <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+                </p>
             </div>
-            <p class="footer__copyright">
-                Powered by 
-                <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
-            </p>
-        </div>
+        </footer>
+
+        
     </div>
     <div id="modal" class="modal js-modal">
         <div class="modal__container js-modal-container">
@@ -280,8 +280,32 @@
             </footer>
         </div>
 
+    <script>
+        var header = document.getElementById("header");
+        var mobileMenu = document.getElementById("mobile-menu");
+        var headerHight = header.clientHeight;
+        /* auto open/close mobile-menu*/
+        mobileMenu.onclick = function() {
+                var isClosed = header.clientHeight === headerHight;
+                if (isClosed) {
+                    header.style.height = "auto"
+                } else {
+                    header.style.height = null
 
-    </div>
+                }
+            }
+            // auto close when we click on menu
+        var menuItems = document.querySelectorAll('.nav li a[href="#"]')
+        for (var i = 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+
+            menuItem.onclick = function() {
+                console.log(this)
+                header.style.height = null;
+                
+            }
+        }
+    </script>
     <script>
         const buyBtns =document.querySelectorAll(".js-buy-ticket")
         const modal = document.querySelector(".js-modal")
@@ -302,32 +326,6 @@
         modalContainer.addEventListener("click",function() {
             event.stopPropagation();
         })
-    </script>
-
-    <script>
-        var header = document.getElementById("header")
-        var mobileMenu =document.getElementById("mobile-menu")
-        var headerHeight = header.clientHeight;
-        //auto open/close mobile-menu on mobile
-        mobileMenu.onclick = function () {
-            var isClosed =header.clientHeight===headerHeight;
-            if (isClosed) {
-                header.style.height ="auto"
-            } else {
-                header.style.height = null
-            }
-        }
-        //auto close when we click on menu
-        var menuItems = document.querySelectorAll(".nav li a[href='#']");
-        for (var i=0; i<menuItems.length; i++) {
-            var menuItem =menuItems[i];
-            
-
-            menuItem.onclick = function(){
-                console.log(this)
-                header.style.height =null
-            }
-        }
     </script>
     <script>
         var slideIndex = 0;
