@@ -1,0 +1,479 @@
+/* Header */
+.header {
+    height: 46.5px;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--black-color);
+    z-index: 1;
+    overflow: visible;
+}
+.header__search-btn,
+.header__mobile-search-btn {
+    float: right; 
+    height: 46.5px;
+    padding: 12px 16px;
+    color:var(--white-color);
+    position:absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+}
+.header__mobile-search-btn {
+    display: none;
+}
+.header__mobile-search-btn:hover {
+    background-color: #ccc;
+    color: var(--black-color);
+}
+.header__search-btn:hover {
+    background-color:#f44336;
+    cursor: pointer;
+    color: var(--black-color);
+}
+
+
+.nav {
+    display: inline-block;
+}
+.nav > li{
+    display: inline-block;
+}
+
+.nav li {
+    position: relative;
+    
+}
+.nav li a {
+    line-height:46.5px;
+    color:var(--white-color);
+    width:100%;
+    padding:0 24px;
+    text-decoration: none;
+    font-size:1em;
+    font-weight: 400;
+
+}
+.nav >li>a {
+    text-transform: uppercase;
+}
+.nav li:hover {
+    background-color: #ccc;
+    
+}
+.nav li:hover a {
+    color: var(--black-color)
+}
+.subnav {
+    min-width: 160px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:var(--white-color);
+    list-style: none;
+}
+.nav .subnav  li {
+    cursor: pointer;
+    padding-left:8px;
+
+}
+.nav li:hover .subnav {
+    display: block;
+}
+.nav .header__sm {
+    display: none;
+}
+/* Slider */
+.slider {
+    width: 100%;
+    margin:46.5px auto 0;
+    display:block;
+}
+.slider::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.slider__item {
+    width: 100%;
+    position:relative;
+    margin-bottom: 0;
+}
+.slider__img {
+    width: 100%;
+}
+.slider__content {
+    position: absolute;
+    bottom: 47px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    color: var(--white-color);
+    text-align: center;
+    
+}
+.slider__content-heading {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    font-weight:300;
+}
+.slider__content-description {
+    margin-top: 24px;
+    font-size: 1em;
+    font-weight:750;
+    text-shadow: 0 1px 0 rgb(0,0,0)
+}
+/* content */
+.content {
+    margin-top: -3px;
+    display:block;
+}
+.content__section {
+    width: 800px;
+    max-width: 100%;
+    padding:64px 15px 112px;
+    margin: 0 auto 0;
+    
+}
+.content .content__section-heading {
+    font-size:1.7em;
+    text-align: center;
+    letter-spacing:4px;
+    font-weight: 400;
+}
+.content .content__section-sub-heading {
+    font-size:1em;
+    text-align: center;
+    letter-spacing:4px;
+    font-weight: 300;
+    font-style: italic;
+    opacity: 0.6;
+    margin-top: 25px;
+}
+.content .content__section-text {
+    display: block;
+    font-size: 1em;
+    text-align: justify;
+    line-height: 1.4;
+    margin-top: 25px;
+}
+.content__members-member-name {
+    margin-top:48px;
+    text-align: center;
+}
+.content__members-member-img {
+    width:60%;
+    margin:15px 20% 16px;
+    border-radius:4px;
+}
+.grid__row::after {
+    content: "";
+    display:table;
+    clear: both;
+}
+#tour {
+    background-color:var(--black-color);
+}
+#tour .content__section-heading,
+#tour .content__section-sub-heading {
+    color: var(--white-color)
+}
+.content__tour-tickets-list {
+    background-color: var(--white-color);
+    list-style:none;
+    margin-top: 40px;
+}
+.content__tour-tickets-list li {
+    font-size: 1em;
+    color: #757575;
+    padding: 11px 16px;
+    border: 1px solid #ddd;
+}
+.content__tour-tickets-list  .sold-out {
+    background-color:#f44336;
+    color:var(--white-color);
+    margin-left:16px;
+    padding:3px 4px;
+}
+.content__tour-tickets-list  .quantity {
+    background-color:var(--black-color);
+    color:var(--white-color);
+    border-radius: 50%;
+    height: 24px;
+    width:24px;
+    float:right;
+    line-height: 24px;
+    text-align: center;
+    margin-top: -3px;
+}
+.content__tour-places-list {
+    margin-top: 16px;
+}
+
+.content__tour-places-img {
+    width: 100%;
+    display: block;
+}
+.content__tour-places-img:hover {
+    opacity: 0.6;
+}
+.content__tour-places-body {
+    background-color:var(--white-color);
+    margin-top :0;
+    padding:16px;
+    font-size: 1em;
+}
+.content__tour-places-place {
+    font-weight: 600;
+}
+.content__tour-places-time {
+    margin-top:15px;
+    color: #757575;
+}
+.content__tour-palces-description {
+    margin-top:15px;
+}
+/* Contact */
+#contact {
+    
+}
+.content__contact {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.content__contact-container {
+    margin-top:48px;
+}
+.content__contact-info  {
+    font-size: 1.3em;
+    line-height:1.5;
+}
+.content__contact-info i[class*="fa-"] {
+    width: 30px;
+    display: inline-block;
+}
+.content__contact-form {
+    font-size:1em;
+}
+.content__contact-form-control {
+    padding: 10px;
+    outline: none;
+    border: 1px solid #ccc;
+    width:100%;
+    
+}
+.content__contact-form-control:hover {
+    border: 1px solid rgb(214, 91, 29);
+    outline: none;
+    border-radius: 5px;
+}
+#content__map-section img {
+    width: 100%;
+}
+/* Footer */
+.footer {
+    padding:64px 16px;
+    background-color: #f1f1f1;
+    color:var(--black-color);
+    text-align: center;
+}
+.footer__socials-list  a {
+    font-size: 2em;
+    color: rgba(0,0,0,0.6);
+    text-emphasis: none;
+}
+.footer__socials-list a i[class*="fa-"] {
+    width: 40px;
+    display: inline-block;
+}
+.footer__copyright {
+    margin-top:30px;
+    font-size: 1.5em;
+}
+.footer__copyright a:hover,
+.footer__socials-list a:hover {
+    color: rgba(0,0,0,0.4);
+}
+.modal {
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+}
+.modal.open {
+    display: flex;
+}
+.modal__container {
+    width:50%;
+    max-width: calc(100% -32px);
+    min-height: 200px;
+    background-color: var(--white-color);
+    font-size: 1em;
+    line-height: 1.5;
+    outline: none;
+    position: relative;
+    animation: modalFadeIn ease 0.6s;
+}
+.modal__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding:12px 16px;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+    color: var(--white-color);
+    line-height:1.5;
+    font-size: 1em;
+}
+.modal__close:hover {
+    background-color: var(--white-color);
+    opacity: 0.9;
+    color: var(--black-color);
+}
+.modal__header {
+    background-color:#009688;
+    height: 136px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color:var(--white-color);
+    font-size: 1.5em;
+}
+.modal__header-icon {
+    margin-left:16px;
+}
+.modal__body {
+    padding:16px;
+}
+.modal__label {
+    display: block;
+    font-size: 1em;
+    margin:15px 0;
+}
+.modal__input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    margin:15px 0;
+    
+}
+#modal__buy-tickets {
+    display: block;
+    width: 100%;
+    padding:18px;
+    margin: 16px 0 0;
+    font-size: 15px;
+    background-color: #009688;
+    border: 1px solid #ccc;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+.modal__footer {
+    padding: 16px;
+    text-align: right;
+}
+
+.model__footer a {
+    color: #2196f3;
+    
+}
+
+.modal__help {
+    font-size: 20px;
+    margin: 0 8px;
+}
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-140px)
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+@media (max-width:63.9375em) {
+    body {
+        font-size: 1.6em;
+    }
+    .btn--small {
+        width: 100%;
+    }
+    .btn {
+        padding:15px 16px;
+        font-size: 1.1em;
+    }
+    .modal__container {
+        width: 80%;
+    }
+}
+@media (max-width: 37.5em) {
+    .btn {
+        font-size: 1.3em;
+    }
+    /* Header */
+    .header {
+        overflow: hidden;
+    }
+    .header__search-btn {
+        display: none;
+    }
+    .header__mobile-search-btn {
+        display: block;
+    }
+    .nav .header__lg {
+        display: none;
+    }
+    .nav .header__sm {
+        display: block;
+    }
+    .nav {
+        display: block;
+        width:100%;
+    }
+    .nav>li {
+        display: block;
+        
+    }
+    
+    .nav >li>a {
+        width: 100%;
+        display: block;
+    }
+    .nav>li:first-child {
+        display: inline-block;
+        
+    }
+    /* Slider */
+    .slider__content {
+        display:none;
+    }
+    /* Content id = band */
+    .content__members-member {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .content__tour-places-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }   
+    .small-mobile {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .footer__socials-list  a{
+        padding: 5px;
+    }
+}
